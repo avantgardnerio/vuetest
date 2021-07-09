@@ -1,4 +1,4 @@
-import People from 'people';
+import People from 'people'
             
 let app;
 onload = () => {

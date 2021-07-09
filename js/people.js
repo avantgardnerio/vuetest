@@ -1,6 +1,7 @@
 export default {
-    template: `
-<div>
+    name: `People`,
+    template:
+`<div>
     <input v-model="message" placeholder="edit me">
     <p>Message is: {{ message }}</p>
     <v-data-table
@@ -10,8 +11,7 @@ export default {
         :items="people"
         :headers="headers"
     />
-<div/>
-    `,
+</div>`,
     data: () => ({
         message: 'Hello Vue!',
         people: [
