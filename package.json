@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require esm --recursive **/*.test.js"
+    "test": "mocha"
   },
   "mocha":{
-    "require": ["jsdom-global/register"]
+    "require": ["jsdom-global/register", "esm"],
+    "spec": "js/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
